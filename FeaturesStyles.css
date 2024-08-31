@@ -6,11 +6,23 @@
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/background.jpg');
-
+    height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
 }
+
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+
 
 .iconContainer {
     display: flex;
@@ -138,8 +150,6 @@ header {
 .headContainer {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: ; */
 }
 
 .iconStyle {
@@ -159,27 +169,23 @@ header {
 
 .subBtn {
     color: white;
-    padding: 2px 20px;
-    
-    
+    padding: 3px 20px;
 }
 
 .inputStyle {
     background-color: white;
-    padding: 25px 20px;
+    padding: 5px 10px;
     border: none;
-    height: 40px;
+    height: 30px;
 }
 
 .inputAndBtn {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
-   
 }
 
 .subText {
@@ -189,38 +195,43 @@ header {
     width: 100%;
     text-align: center;
     margin-top: 10px;
-    /* border-radius: 5%; */
 
 
 }
 
+
 .thirdContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-column: inherit;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 0px 80px;
     gap: 40px;
-    margin-top: 40px;
-
+    margin-top: 80px;
 }
 
 .cardContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 15px;
     color: #3781F1;
-
+    margin-bottom: 30px;
 }
+
+.landContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 .child1 {
     color: white;
     font-size: 17px;
     /* font-weight: 400; */
     /* text-align: left; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -229,8 +240,8 @@ header {
     font-size: 17px;
     /* font-weight: 400; */
     /* text-align: center; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .child3 {
@@ -238,6 +249,6 @@ header {
     font-size: 17px;
     /* font-weight: 400; */
     /* text-align: right; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
